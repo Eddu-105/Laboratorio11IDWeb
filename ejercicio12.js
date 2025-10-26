@@ -6,19 +6,19 @@ while (continuar) {
   let precio = parseFloat(prompt("Ingrese el precio del producto:"));
 
   if (isNaN(precio) || precio <= 0) {
-    alert("Ingrese un valor válido.");
+    console.log("Ingrese un valor válido.");
     continue;
   }
 
   if (total + precio > presupuesto) {
-    alert("Este producto excede su presupuesto. No será agregado.");
+    console.log("Este producto excede su presupuesto. No será agregado.");
     continuar = false;
   } else {
     total += precio;
-    alert("Producto agregado. Total parcial: S/ " + total.toFixed(2));
+    console.log("Producto agregado. Total parcial: S/ " + total.toFixed(2));
 
-    let respuesta = prompt("¿Desea agregar otro producto? (S/N):");
-    if (respuesta.toUpperCase() !== "S") {
+    let respuesta = prompt("¿Desea agregar otro producto? (SI/NO):");
+    if (respuesta.toUpperCase() !== "Si") {
       continuar = false;
     }
   }
@@ -40,4 +40,4 @@ if (total > 100) {
 let totalFinal = total - descuento;
 mensaje += "Total final a pagar: S/ " + totalFinal.toFixed(2);
 
-alert(mensaje);
+console.log(mensaje);

@@ -13,21 +13,21 @@ switch (opcion) {
     case 1:
       let radio = parseFloat(prompt("Ingrese el radio del círculo:"));
       let areaCirculo = Math.PI * radio ** 2;
-      alert("El área del círculo es: " + areaCirculo.toFixed(2));
+      console.log("El área del círculo es: " + areaCirculo.toFixed(2));
       break;
 
     case 2:
       let base = parseFloat(prompt("Ingrese la base del rectángulo:"));
       let altura = parseFloat(prompt("Ingrese la altura del rectángulo:"));
       let areaRect = base * altura;
-      alert("El área del rectángulo es: " + areaRect.toFixed(2));
+      console.log("El área del rectángulo es: " + areaRect.toFixed(2));
       break;
 
     case 3:
-      alert("Saliendo del programa.");
+      console.log("Saliendo del programa.");
       break;
 
     default:
-      alert("Opción no válida. Intente nuevamente.");
+      console.log("Opción no válida. Intente nuevamente.");
   }
 } while (opcion !== 3);

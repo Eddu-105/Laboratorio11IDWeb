@@ -7,7 +7,7 @@ while (continuar) {
   if (!isNaN(precio) && precio > 0) {
     total += precio;
   } else {
-    alert("Ingrese un valor válido.");
+    console.log("Ingrese un valor válido.");
   }
 
   let respuesta = prompt("¿Desea agregar otro producto? (Si/No):");
@@ -32,4 +32,4 @@ if (total > 100) {
 let totalFinal = total - descuento;
 mensaje += "Total final a pagar: S/ " + totalFinal.toFixed(2);
 
-alert(mensaje);
+console.log(mensaje);

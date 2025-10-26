@@ -36,7 +36,7 @@ do {
 
       let encimaPromedio = notas.filter(n => n > promedio).length;
 
-      alert(
+      console.log(
         "RESULTADOS DE ESTADÍSTICAS:\n" +
         "Promedio: " + promedio.toFixed(2) + "\n" +
         "Valor máximo: " + max + "\n" +
@@ -58,7 +58,7 @@ do {
         else impares++;
       }
 
-      alert(
+        console.log(
         `En el rango de ${inicio} a ${fin}:\n` +
         `Números pares: ${pares}\n` +
         `Números impares: ${impares}`
@@ -72,16 +72,16 @@ do {
       for (let i = 1; i <= 12; i++) {
         resultado += `${num} x ${i} = ${num * i}\n`;
       }
-      alert(resultado);
+      console.log(resultado);
       break;
     }
 
     case 4:
-      alert("Saliendo del programa.");
+      console.log("Saliendo del programa.");
       break;
 
     default:
-      alert("Opción no válida. Intente nuevamente.");
+      console.log("Opción no válida. Intente nuevamente.");
   }
 
 } while (opcion !== 4);

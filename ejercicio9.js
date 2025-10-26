@@ -11,7 +11,7 @@ while (temp > 0) {
 }
 
 if (suma === numero) {
-  alert(numero + " es un número Armstrong.");
+  console.log(numero + " es un número Armstrong.");
 } else {
-  alert(numero + " NO es un número Armstrong.");
+  console.log(numero + " NO es un número Armstrong.");
 }
